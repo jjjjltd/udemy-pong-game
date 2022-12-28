@@ -60,7 +60,7 @@ if billy.ycor() < 0:
 else:
     billy.setheading(random.randint(271, 350))
 
-billy.setheading(80)
+billy.setheading(random.randint(270, 358))
 
 boundary = ((screen.window_height() // 2)-10)
 wall_boundary = ((screen.window_width() // 2) - 80)   
@@ -74,7 +74,7 @@ while play_on:
     # time.sleep(0.5)
     screen.update()    
     billy.setheading(billy.heading())
-    billy.forward(1)
+    billy.forward(20)
 
     if billy.ycor() >= boundary or billy.ycor() <= -1 * boundary:
         billy.bounce(billy.heading())

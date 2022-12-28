@@ -10,7 +10,7 @@ class Ball(Turtle):
         self.penup()
         self.color("white")
         self.shape("circle")
-        self.speed(2)
+        self.speed(0.1)
         self.direction = "F"
         self.start_pos()
     
