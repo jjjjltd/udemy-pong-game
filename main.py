@@ -82,10 +82,8 @@ while play_on:
     if paddle_met == False:
 
         if (billy.distance(right_paddle) < 50 and billy.xcor() > wall_boundary):  
-            print("This is true.")
             billy.bounce(billy.heading())
             paddle_met = True
-            print_heading(billy.heading())
         
         if (billy.distance(left_paddle) < 50 and billy.ycor() < -1 * wall_boundary):
             billy.bounce(billy.heading())
